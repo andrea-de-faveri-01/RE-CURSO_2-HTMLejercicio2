@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO: HTML FORMULARIO</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>INFORMACION DE USUARIO</legend>
+                <div>
+                    <label for="IDU nombre">Nombre usuario</label>
+                    <input required minlength="1" maxlength="20" id="IDU nombre" type="text">
+                </div>
+                <div>
+                    <label for="IDU email">Dirección email</label>
+                    <input required id="IDU email" type="email">
+                </div>
+                <div>
+                    <label for="IDU numtel">Numero de contacto</label>
+                    <input required min="9" max="12" id="IDU numtel" type="tel">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>CONTACTE CON NOSOSTROS</legend>
+                <div>
+                    <label for="CCN asunto">Asunto</label>
+                    <select required id="CCN asunto">
+                        <option value="alta">Darse de alta</option>
+                        <option value="baja">Darse de baja</option>
+                        <option value="reclamacion">Reclamaciones</option>
+                        <option value="concurso">Concurso</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="CCN referencia">Referencia del pedido</label>
+                    <select id="CCN referencia">
+                        <option value="primer">Primer pedido</option>
+                        <option value="error">Pedido equivocado</option>
+                        <option value="devolucion">Devolución</option>
+                    </select>
+                    <span>opcional</span>
+                </div>
+                <div>
+                    <label for="CCN archivo">Archivo adjunto</label>
+                    <input id="CCN archivo" type="file">
+                    <span>opcional</span>
+                </div>
+                <div>
+                    <label for="CCN mensaje">Mensaje</label>
+                    <textarea required minlength="5" maxlength="500" id="CCN mensaje" cols="30" rows="3"></textarea>
+                </div>
+            </fieldset>
+            <button>ENVIAR</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
